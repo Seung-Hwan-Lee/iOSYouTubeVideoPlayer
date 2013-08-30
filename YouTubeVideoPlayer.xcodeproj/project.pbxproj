@@ -23,6 +23,10 @@
 		E95BC40317D03B110043DE70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95BC3DE17D03B110043DE70 /* Foundation.framework */; };
 		E95BC40B17D03B110043DE70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E95BC40917D03B110043DE70 /* InfoPlist.strings */; };
 		E95BC40E17D03B110043DE70 /* YouTubeVideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BC40D17D03B110043DE70 /* YouTubeVideoPlayerTests.m */; };
+		E95BC41A17D03E710043DE70 /* YouTubeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95BC41817D03E710043DE70 /* YouTubeVideoViewController.m */; };
+		E95BC41B17D03E710043DE70 /* YouTubeVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95BC41917D03E710043DE70 /* YouTubeVideoViewController.xib */; };
+		E95BC42017D047760043DE70 /* YouTubeVideoPlayAutomatically.html in Resources */ = {isa = PBXBuildFile; fileRef = E95BC41E17D047760043DE70 /* YouTubeVideoPlayAutomatically.html */; };
+		E95BC42117D047760043DE70 /* YouTubeVideoControlPlayback.html in Resources */ = {isa = PBXBuildFile; fileRef = E95BC41F17D047760043DE70 /* YouTubeVideoControlPlayback.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,11 @@
 		E95BC40A17D03B110043DE70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E95BC40C17D03B110043DE70 /* YouTubeVideoPlayerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouTubeVideoPlayerTests.h; sourceTree = "<group>"; };
 		E95BC40D17D03B110043DE70 /* YouTubeVideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouTubeVideoPlayerTests.m; sourceTree = "<group>"; };
+		E95BC41717D03E710043DE70 /* YouTubeVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeVideoViewController.h; sourceTree = "<group>"; };
+		E95BC41817D03E710043DE70 /* YouTubeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeVideoViewController.m; sourceTree = "<group>"; };
+		E95BC41917D03E710043DE70 /* YouTubeVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouTubeVideoViewController.xib; sourceTree = "<group>"; };
+		E95BC41E17D047760043DE70 /* YouTubeVideoPlayAutomatically.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YouTubeVideoPlayAutomatically.html; sourceTree = "<group>"; };
+		E95BC41F17D047760043DE70 /* YouTubeVideoControlPlayback.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YouTubeVideoControlPlayback.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,11 @@
 				E95BC3F417D03B110043DE70 /* ViewController.h */,
 				E95BC3F517D03B110043DE70 /* ViewController.m */,
 				E95BC3F717D03B110043DE70 /* ViewController.xib */,
+				E95BC41717D03E710043DE70 /* YouTubeVideoViewController.h */,
+				E95BC41817D03E710043DE70 /* YouTubeVideoViewController.m */,
+				E95BC41917D03E710043DE70 /* YouTubeVideoViewController.xib */,
+				E95BC41E17D047760043DE70 /* YouTubeVideoPlayAutomatically.html */,
+				E95BC41F17D047760043DE70 /* YouTubeVideoControlPlayback.html */,
 				E95BC3E317D03B110043DE70 /* Supporting Files */,
 			);
 			path = YouTubeVideoPlayer;
@@ -236,6 +250,9 @@
 				E95BC3F117D03B110043DE70 /* Default@2x.png in Resources */,
 				E95BC3F317D03B110043DE70 /* Default-568h@2x.png in Resources */,
 				E95BC3F917D03B110043DE70 /* ViewController.xib in Resources */,
+				E95BC41B17D03E710043DE70 /* YouTubeVideoViewController.xib in Resources */,
+				E95BC42017D047760043DE70 /* YouTubeVideoPlayAutomatically.html in Resources */,
+				E95BC42117D047760043DE70 /* YouTubeVideoControlPlayback.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +290,7 @@
 				E95BC3E917D03B110043DE70 /* main.m in Sources */,
 				E95BC3ED17D03B110043DE70 /* AppDelegate.m in Sources */,
 				E95BC3F617D03B110043DE70 /* ViewController.m in Sources */,
+				E95BC41A17D03E710043DE70 /* YouTubeVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +402,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YouTubeVideoPlayer/YouTubeVideoPlayer-Prefix.pch";
 				INFOPLIST_FILE = "YouTubeVideoPlayer/YouTubeVideoPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +414,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YouTubeVideoPlayer/YouTubeVideoPlayer-Prefix.pch";
 				INFOPLIST_FILE = "YouTubeVideoPlayer/YouTubeVideoPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

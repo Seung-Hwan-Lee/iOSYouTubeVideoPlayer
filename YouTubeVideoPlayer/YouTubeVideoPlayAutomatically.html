@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="https://www.youtube.com/player_api"></script>
+        <style>
+            body, div {
+                margin: 0px;
+                padding: 0px;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="media_area"></div>
+    </body>
+    <script>
+        var ytPlayer = null;
+        
+        function onYouTubePlayerAPIReady() {
+            ytPlayer = new YT.Player('media_area',
+                                     {height: '200',
+                                     width: '200',
+                                     videoId: 'sLSCpAKV-_4',
+                                     events: {'onReady': onPlayerReady}
+                                     });
+        }
+        
+        function onPlayerReady(e) {
+            e.target.playVideo();
+        }
+        </script>
+</html>
